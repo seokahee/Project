@@ -61,7 +61,7 @@ const btn=document.getElementById("btn");
 const searchInput =document.getElementById("search").value;
 btn=(searchInput)=>{
 
-  window.location.href=
+  // window.location.href=
 
 
-}
+};
