@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+}
+
+header {
+  height: 200px;
+  margin: 2%;
+}
+
+header>img {
+  width: 20%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+  color: white;
+}
+
+form>input {
+  padding: 10px;
+  width: 15%;
+  margin: 0 1%;
+  border: none;
+
+  color: white;
+  font-size: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+form>button {
+  padding: 10px;
+
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+#moviesBox {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.card {
+  width: 20%;
+  margin: 3% 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+}
