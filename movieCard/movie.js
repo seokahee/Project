@@ -72,37 +72,34 @@ function addMovie(movie) {
 // form을 사용할 경우, Enter이벤트를 따로 작성하지않아도 적용된다.
 let searchForm = document.getElementById("searchForm");
 
+// 새로고침 안내 문구
 let logoText = document.getElementById("logoText");
 logoText.style.display = "none"
 
 searchForm.addEventListener("submit", (e) => {
-  // 인풋값을 소문자로 변환하여 가져오기
-  // 영화 카드 가져오기 (카드 제목으로 검색 키워드랑 비교해야 하니까)
-
-  e.preventDefault();
   // preventDefault 기본행동을 막는 함수 form은 기본적으로 새로고침을한다
   // e - 이벤트 대상
+  e.preventDefault();
 
-  // alert('테스트');
+  // 인풋값을 소문자로 변환하여 가져오기
+  // 영화 카드 가져오기 (카드 제목으로 검색 키워드랑 비교해야 하니까)
   const searchInput = document.getElementById("search").value.toLowerCase();
   const movieCards = document.querySelectorAll(".card");
 
-  searchInput.focus();
-  
   console.log("Search Input :", searchInput)
-  console.log("movieCards :", movieCards)
+  // console.log("movieCards :", movieCards)
 
   movieCards.forEach(card => {
     const title = card.querySelector(".mvTitle").textContent.toLowerCase();
     // textContent - value는 사용자가 입력하는 텍스트에서만 사용.
 
-    console.log("Card Title:", title);
-
     if (title.includes(searchInput)) {
       card.style.display = "flex"; // 제목이 일치하면 카드 띄우기
       logoText.style.display = "flex"
+
     } else {
       card.style.display = "none"; // 일치하지 않으면 카드를 숨기기
+      logoText.style.display = "flex"
     }
   });
 });
