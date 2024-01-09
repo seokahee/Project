@@ -69,6 +69,7 @@ function addMovie(movie) {
 };
 
 // 제목 검색 시 결과 띄우기
+// form을 사용할 경우, Enter이벤트를 따로 작성하지않아도 적용된다.
 let searchForm = document.getElementById("searchForm");
 
 let logoText = document.getElementById("logoText");
