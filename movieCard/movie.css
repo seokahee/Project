@@ -92,6 +92,7 @@ button:hover {
 }
 
 .card:hover {
-  filter: brightness(150%);
+  filter: invert(10%);
+  /* filter: brightness(150%); */
   transform: scale(1.1);
 }
