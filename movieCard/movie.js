@@ -79,12 +79,16 @@ searchForm.addEventListener("submit", (e) => {
   // 인풋값을 소문자로 변환하여 가져오기
   // 영화 카드 가져오기 (카드 제목으로 검색 키워드랑 비교해야 하니까)
 
-  e.preventDefault();// 기본행동을 막는 함수 form은 기본적으로 새로고침을한다
+  e.preventDefault();
+  // preventDefault 기본행동을 막는 함수 form은 기본적으로 새로고침을한다
+  // e - 이벤트 대상
 
   // alert('테스트');
   const searchInput = document.getElementById("search").value.toLowerCase();
   const movieCards = document.querySelectorAll(".card");
 
+  searchInput.focus();
+  
   console.log("Search Input :", searchInput)
   console.log("movieCards :", movieCards)
 
