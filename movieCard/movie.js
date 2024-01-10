@@ -63,11 +63,9 @@ function addMovie(movie) {
   card.addEventListener("click", () => {
     alert("영화 ID : " + id);
   });
-
   return card;
 
 };
-
 // 제목 검색 시 결과 띄우기
 // form을 사용할 경우, Enter이벤트를 따로 작성하지않아도 적용된다.
 let searchForm = document.getElementById("searchForm");
@@ -86,20 +84,16 @@ searchForm.addEventListener("submit", (e) => {
   const searchInput = document.getElementById("search").value.toLowerCase();
   const movieCards = document.querySelectorAll(".card");
 
-  console.log("Search Input :", searchInput)
-  // console.log("movieCards :", movieCards)
-
   movieCards.forEach(card => {
     const title = card.querySelector(".mvTitle").textContent.toLowerCase();
     // textContent - value는 사용자가 입력하는 텍스트에서만 사용.
 
     if (title.includes(searchInput)) {
       card.style.display = "flex"; // 제목이 일치하면 카드 띄우기
-      logoText.style.display = "flex"
-
+      logoText.style.display = "flex";
     } else {
       card.style.display = "none"; // 일치하지 않으면 카드를 숨기기
-      logoText.style.display = "flex"
+      logoText.style.display = "flex";
     }
   });
 });
