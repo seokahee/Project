@@ -14,7 +14,7 @@ header {
   margin: 2%;
   color: white;
 }
-header img:hover{
+header img:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -30,7 +30,7 @@ form {
   color: white;
 }
 
-form>input {
+form > input {
   padding: 10px;
   width: 15%;
   margin: 0 1%;
@@ -42,7 +42,7 @@ form>input {
   border-bottom: 1px solid white;
 }
 
-form>button {
+form > button {
   padding: 10px;
 
   font-size: 20px;
@@ -68,9 +68,8 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
-
+/* 주석입니다 */
 .card {
   width: 20%;
   height: 80vh;
@@ -86,7 +85,7 @@ button:hover {
   border-radius: 10px;
 }
 
-.card>.poster {
+.card > .poster {
   width: 60%;
   border-radius: 10px;
 }
