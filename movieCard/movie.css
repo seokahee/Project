@@ -61,7 +61,7 @@ button:hover {
   border: 3px solid red;
   color: red;
 }
-
+/* 테스트입니다 */
 #moviesBox {
   width: 100%;
   margin-top: 5%;
@@ -69,7 +69,6 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-/* 주석입니다 */
 .card {
   width: 20%;
   height: 80vh;
